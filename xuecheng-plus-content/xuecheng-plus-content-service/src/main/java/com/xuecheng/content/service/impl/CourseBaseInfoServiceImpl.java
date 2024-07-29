@@ -102,7 +102,7 @@ public class CourseBaseInfoServiceImpl implements CourseBaseInfoService {
     if(insert<=0){
       throw new RuntimeException("新增课程基本信息失败");
     }
-    //todo:向课程营销表保存课程营销信息
+    // 向课程营销表保存课程营销信息
     //课程营销信息
     CourseMarket courseMarketNew = new CourseMarket();
     Long courseId = courseBaseNew.getId();
@@ -112,7 +112,7 @@ public class CourseBaseInfoServiceImpl implements CourseBaseInfoService {
     if(i<=0){
       throw new RuntimeException("保存课程营销信息失败");
     }
-    //todo:查询课程基本信息及营销信息并返回
+    // 查询课程基本信息及营销信息并返回
     return getCourseBaseInfo(courseId);
   }
   //保存课程营销信息
